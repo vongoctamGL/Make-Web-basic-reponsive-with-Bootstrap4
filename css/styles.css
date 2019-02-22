@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    font-family: 'Poppins', sans-serif;
+    outline: none !important;
+    scroll-behavior: smooth;
+}
+header{
+    position: relative;
+    z-index: 100000;
+}
+p{
+    font-size: 1.15rem;
+}
+.navbar{
+    background: transparent !important;
+    transition: 0.5s;
+
+}
+.navbar.scrolled{
+    background-color: #5ec34ae3 !important;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #000;
+    background-color: #fff;
+}
+.navbar-light .navbar-nav .active>.nav-link:hover{
+    color: #000;
+    background-color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(225,225,225,.8);
+}
+.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-link:focus{
+    color: rgba(225,225,225,1);
+}
+.navbar-light .navbar-brand,.navbar-light .navbar-brand:hover,.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:visited {
+    color: rgba(225,225,225,1);
+    font-size: 1.5rem;
+    font-weight: 600;
+    z-index: 1000;
+}
+.banner{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    margin: 0;
+}
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#fff,transparent);
+    pointer-events: none;
+
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg,#fff,transparent);
+    pointer-events: none;
+
+}
+.height100p{
+    height: 100vh;
+}
+.h100{
+    height: 100vh;
+}
+.textHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.textHome h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.textHome p{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.newsBox{
+    padding: 100px 0;
+}
+.banner1{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/vungtau.jpg);
+    background-size: cover;
+    margin: 0;
+}
+.banner1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#fff,transparent);
+    pointer-events: none;
+
+}
+.banner1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(deg,#fff,transparent);
+    pointer-events: none;
+
+}
+.newsBox .textHeader{
+    position: relative;
+    z-index: 2000;
+    text-transform: uppercase;
+    font-size: 3rem;
+}.banner-text{
+    box-sizing: border-box;
+    padding: 10px 10px;
+    transition: 0.5s;
+    border: 5px solid #5ec34ae3;
+}
+.banner-text a{
+    text-decoration: none;
+    color: #000;    
+}
+.placeBox{
+    margin: 10px 10px;
+    padding: 100px 20px;
+}
+.placeBox a{
+    text-decoration: none;
+    color: #000;
+}
+.banner2{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/taynguyen.jpg);
+    background-size: cover;
+    margin: 0;
+}
+.banner2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#fff,transparent);
+    pointer-events: none;
+
+}
+.banner2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(deg,#fff,transparent);
+    pointer-events: none;
+
+}
+.placeBox .textHeader h2{
+    text-transform: uppercase;
+}
+.placeBox .placeImg{
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.placeBox .placeImg .imgText{
+    padding: 10px 10px;
+}
+.placeBox .placeImg .imgText .button{
+    background-color: #fff;
+    border: 2px solid #5ec34ae3;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+.placeBox .placeImg:hover{
+    border: 5px solid #5ec34ae3;
+}
+.blogBox{
+    margin: 0;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+.blogBox .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.blogBox .textBlog{
+    z-index: 1000;
+}
+.blogBox button{
+    padding: 10px 10px;
+    text-transform: uppercase;
+    border: 2px solid #5ec34ae3;
+    background-color: #fff;
+}
+.contactBox{
+    background: linear-gradient(transparent,#5ec34ae3);
+    padding: 100px 0;
+    position: relative;
+}
+.contactBox .textContact{
+    padding: 10px 10px;
+
+}
+.contactBox .textContact h2{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.contactBox .button{
+    margin: 10px 10px 10px 0;
+    padding: 10px 20px ;
+    border: 2px solid #5ec34ae3;
+    background-color: #fff;
+}
+.contactBox .formContact{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.contactBox .form-group{
+    margin: 0;
+    border: none;
+    border-bottom: 2px solid grba(94,195,74,0.5);
+}
+.contactBox .contactMap{
+    margin: 20px 30px;
+}
+footer{
+    padding: 10px;
+}
+footer .container{
+    margin: auto;
+}
+footer .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 2rem;
+}
+footer .social li{
+    list-style: none;
+}
+footer .social li a{
+    text-decoration: none;
+    color: #5ec34ae3;
+    padding: 10px 10px;
+}
+footer .container .coppy{
+    margin: 0;
+}
+footer .container .coppy a{
+    text-decoration: none;
+    color: #5ec34ae3;
+}
+
+@media (max-width: 992px)
+{
+    *{
+        font-size: 16px;
+    }
+    .newsBox{
+        height: 100%;
+    }
+    .newsBox .textHeader{
+        margin: 10px 10px;
+        padding: 30px 0;
+    }
+    .banner-text{
+        margin: 10px;
+    }
+    .placeBox{
+        height: 100%;
+    }
+    .placeBox .textHeader h2{
+        font-size: 1.5rem;
+    }
+    .placeBox .placeImg {
+        margin: 10px;
+    }
+    .blogBox{
+        padding: 20px 20px;
+    }
+    .contactBox .contactMap{
+        width: auto;
+        overflow: hidden;
+    }
+
+    
+
+}
+
